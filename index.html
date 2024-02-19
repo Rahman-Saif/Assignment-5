@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container ml-40">
+      <section id="nav">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-3xl">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn"
+              >Bus
+              <span
+                ><img
+                  src="./images/bus-logo.png"
+                  class="w-5 h-3 bg-[#1DD1001A]"
+                  alt="" /></span
+            ></a>
+          </div>
+        </div>
+      </section>
+      <section id="home">
+        <div
+          class="hero min-h-screen"
+          style="background-image: url(./images/banner.png)"
+        >
+          <div class="hero-content text-center text-neutral-content">
+            <div >
+              <h1 class="mb-5  font-bold text-7xl">
+                End-to-End Travel with<br> P Paribahan
+              </h1>
+              <p class="mb-5">
+                Yes, you can run unit tests and view the results directly within
+                the <br>app. The integrated testing features allow for a streamlined
+                .
+              </p>
+              <button class="btn btn-primary">Buy Tickets</button>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="cards">
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
+          </div>
+          <div class="card card-side bg-base-100 shadow-xl">
+            <figure>
+              <img
+                src="https://daisyui.com/images/stock/photo-1635805737707-575885ab0820.jpg"
+                alt="Movie"
+              />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title">New movie is released!</h2>
+              <p>Click the button to watch on Jetflix app.</p>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </header>
+    <main class="mt-36 container  ml-40">
+      <section id="offers ">
+        <h1 class="text-6xl text-center mb-24">Best Offers</h1>
+        <div class="offer-cards flex flex-row justify-around">
+            <div class="offer-card1 w-[573px] h-[220px] bg-[#FFBF0F] flex flex-row justify-between">
+                <div class="flex  justify-between align-center p-[52px]">
+                <div class="first-text w-full">
+                    <h1 class="text-6xl font-extrabold" >15% OFF</h1>
+                    <h3 class="text-2xl font-medium">on your next purchases</h3>
+                    <p class="text-xl ">use by January 2024</p>
+                </div>
+                <div class="second-text">
+                    <h1 class="text-4xl font-medium">New 15</h1>
+                    <p>Coupon code</p>
+                </div>
+                </div>
+            </div>
+            <div class="offer-card1 w-[573px] h-[220px] bg-[#F78C9C] flex flex-row justify-between">
+                <div class="flex  justify-between align-center p-[52px]">
+                <div class="first-text w-full">
+                    <h1 class="text-6xl font-extrabold" >15% OFF</h1>
+                    <h3 class="text-2xl font-medium">on your next purchases</h3>
+                    <p class="text-xl ">use by January 2024</p>
+                </div>
+                <div class="second-text">
+                    <h1 class="text-4xl font-medium">New 15</h1>
+                    <p>Coupon code</p>
+                </div>
+                </div>
+                </div>
+        </div>
+        <div class="button flex justify-center align-center w-full">
+            <button class="btn btn-outline btn-primary mt-16  ">See All Offers</button>
+        </div>
+      </section>
+      <section id="paribahan">
+        <h1>P.H Paribahan</h1>
+        <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        <div class="hero  bg-base-200">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="flex flex-col justify-center items-center">
+            <img
+              src="./images/fare.png"
+              class="w-11 h-10 rounded-lg shadow-2xl"
+            />
+            <h1>550 taka</h1>
+            <p>Per Seat</p>
+            </div>
+            <div class="main parent div gap-5">
+
+           
+            <div>
+            <div class="flex flex-row justify-between ">
+              <div>
+                <h1 class="text-3xl">Greenline Paribahan</h1>
+                <p>Coach-009-WEB ! AC_Business</p>
+              </div>
+              <div>
+                <a class="btn">Bus<span><img
+                  src="./images/bus-logo.png"
+                  class="w-5 h-3 bg-[#1DD1001A]"
+                  alt="" /></span
+            ><span>40</span>seats left</a>
+              </div>
+            </div>
+            </div>
+
+            <div class="flex flex-row justify-between">
+                <h1>Route</h1>
+                <p>Dhaka-Sylhet</p>
+            </div>
+            <div class="flex flex-row justify-between">
+                <h1>Departure Time</h1>
+                <p>9.00 pm</p>
+            </div>
+            <div class="row-divs flex flex-row justify-around gap-3 ">
+                <div class="w-[232px] h-[56px] bg-[#0307120D]">
+                    <h1>Boarding Point - Laxmipur</h1>
+                </div>
+                <div  class="w-[232px] h-[56px] bg-[#0307120D]">
+                    <h1>Boarding Point - Laxmipur</h1>
+                </div>
+                <div  class="w-[232px] h-[56px] bg-[#0307120D]">
+                    <h1>Boarding Point - Laxmipur</h1>
+                </div>
+            </div>
+             </div>
+          </div>
+        </div>
+      </section>
+      <section class="keyseats">
+        <div class="hero ">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="overflow-x-auto">
+              <table class="table table-zebra">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Job</th>
+                    <th>Favorite Color</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- row 1 -->
+                  <!-- <tr>
+                    <th>1</th>
+                    <td>Cy Ganderton</td>
+                    <td>Quality Control Specialist</td>
+                    <td>Blue</td>
+                  </tr>
+                  
+                  <tr>
+                    <th>2</th>
+                    <td>Hart Hagerty</td>
+                    <td>Desktop Support Technician</td>
+                    <td>Purple</td>
+                  </tr>
+                   row 3 
+                  <tr>
+                    <th>3</th>
+                    <td>Brice Swyre</td>
+                    <td>Tax Accountant</td>
+                    <td>Red</td>
+                  </tr> -->
+                </tbody>
+              </table>
+              <p>Total Price <span>550 taka</span></p>
+              <label class="input input-bordered flex items-center gap-2">
+  <input type="text" class="grow" placeholder="Search" />
+  <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg> -->
+  <button>Apply</button>
+</label>
+    <p>Grand Total <span>550 taka</span></p>
+    <div class="form ">
+<div class="name ">
+            <label class="form-control w-full max-w-xs">
+  <div class="label">
+    <span class="label-text text-xl font-semibold">Name</span>
+  </div>
+  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
+</label>
+</div>
+<div class="name ">
+            <label class="form-control w-full max-w-xs">
+  <div class="label">
+    <span class="label-text text-xl font-semibold">Email</span>
+  </div>
+  <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
+</label>
+</div>
+<div class="name ">
+            <label class="form-control w-full max-w-xs">
+  <div class="label">
+    <span class="label-text text-xl font-semibold">Subject</span>
+  </div>
+  <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
+</label>
+</div>
+<div class="button col-span-2" >
+    <button class="h-16 w-80 lg:w-[34rem] bg-[#FF4240] rounded-xl text-white font-semibold">Send Me </button>
+</div>
+        </div>
+            </div>
+            <div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">A1</kbd>
+                <kbd class="kbd w-24 h-12">A2</kbd>
+                <kbd class="kbd w-24 h-12">A3</kbd>
+                <kbd class="kbd w-24 h-12">A4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">B1</kbd>
+                <kbd class="kbd w-24 h-12">B2</kbd>
+                <kbd class="kbd w-24 h-12">B3</kbd>
+                <kbd class="kbd w-24 h-12">B4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">C1</kbd>
+                <kbd class="kbd w-24 h-12">C2</kbd>
+                <kbd class="kbd w-24 h-12">C3</kbd>
+                <kbd class="kbd w-24 h-12">C4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">D1</kbd>
+                <kbd class="kbd w-24 h-12">D2</kbd>
+                <kbd class="kbd w-24 h-12">D3</kbd>
+                <kbd class="kbd w-24 h-12">D4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">E1</kbd>
+                <kbd class="kbd w-24 h-12">E2</kbd>
+                <kbd class="kbd w-24 h-12">E3</kbd>
+                <kbd class="kbd w-24 h-12">E4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">F1</kbd>
+                <kbd class="kbd w-24 h-12">F2</kbd>
+                <kbd class="kbd w-24 h-12">F3</kbd>
+                <kbd class="kbd w-24 h-12">F4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">G1</kbd>
+                <kbd class="kbd w-24 h-12">G2</kbd>
+                <kbd class="kbd w-24 h-12">G3</kbd>
+                <kbd class="kbd w-24 h-12">G4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">H1</kbd>
+                <kbd class="kbd w-24 h-12">H2</kbd>
+                <kbd class="kbd w-24 h-12">H3</kbd>
+                <kbd class="kbd w-24 h-12">H4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">E1</kbd>
+                <kbd class="kbd w-24 h-12">E2</kbd>
+                <kbd class="kbd w-24 h-12">E3</kbd>
+                <kbd class="kbd w-24 h-12">E4</kbd>
+              </div>
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd class="kbd w-24 h-12">J1</kbd>
+                <kbd class="kbd w-24 h-12">J2</kbd>
+                <kbd class="kbd w-24 h-12">J3</kbd>
+                <kbd class="kbd w-24 h-12">J4</kbd>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
