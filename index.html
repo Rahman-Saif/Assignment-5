@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="container ml-40">
+    <header class="container ml-40 ">
       <section id="nav">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
@@ -73,14 +73,14 @@
           <div class="hero-content text-center text-neutral-content">
             <div >
               <h1 class="mb-5  font-bold text-7xl">
-                End-to-End Travel with<br> P Paribahan
+                End-to-End Travel with<br><span class="text-lime-400"> P Paribahan</span>
               </h1>
               <p class="mb-5">
                 Yes, you can run unit tests and view the results directly within
                 the <br>app. The integrated testing features allow for a streamlined
                 .
               </p>
-              <button class="btn btn-primary">Buy Tickets</button>
+              <button class="w-[170px] h-16 rounded-2xl text-black bg-lime-500">Buy Tickets</button>
             </div>
           </div>
         </div>
@@ -124,7 +124,7 @@
         </div> -->
       </section>
     </header>
-    <main class="mt-36 container  ml-40">
+    <main class="mt-44 container  ml-40">
       <section id="offers ">
         <h1 class="text-6xl text-center mb-24">Best Offers</h1>
         <div class="offer-cards flex flex-row justify-around">
@@ -156,15 +156,18 @@
                 </div>
         </div>
         <div class="button flex justify-center align-center w-full">
-            <button class="btn btn-outline btn-primary mt-16  ">See All Offers</button>
+            <button class="w-[190px] border-2 h-16 rounded-2xl  border-lime-400 text-lime-500 mt-16  ">See All Offers</button>
         </div>
       </section>
-      <section id="paribahan">
-        <h1>P.H Paribahan</h1>
-        <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-        <div class="hero  bg-base-200">
-          <div class="hero-content flex-col lg:flex-row-reverse">
-            <div class="flex flex-col justify-center items-center">
+      <section id="paribahan mt-44">
+        <div class="text-center mt-20 mb-10">
+        <h1 class="text-5xl font-bold mb-5">P.H Paribahan</h1>
+        <p class="text-lg">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+        </div>
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row-reverse w-full">
+            <!-- <div class="h-64 w-64 border-dotted border-lime-400"></div> -->
+            <div class="flex flex-col justify-center items-center ml-24">
             <img
               src="./images/fare.png"
               class="w-11 h-10 rounded-lg shadow-2xl"
@@ -175,38 +178,43 @@
             <div class="main parent div gap-5">
 
            
-            <div>
-            <div class="flex flex-row justify-between ">
+            <div class="flex flex-row gap-4">
+              <div>
+                <img src="./images/bus-logo.png" alt="">
+              </div>
+              
+            <div class="flex flex-row justify-between gap-56">
               <div>
                 <h1 class="text-3xl">Greenline Paribahan</h1>
                 <p>Coach-009-WEB ! AC_Business</p>
               </div>
-              <div>
-                <a class="btn">Bus<span><img
-                  src="./images/bus-logo.png"
-                  class="w-5 h-3 bg-[#1DD1001A]"
+              <div class="">
+                <a class="btn bg-green-500"><span><img
+                  src="./images/seat-green-filled.png"
+                  class="w-5 h-3 "
                   alt="" /></span
-            ><span>40</span>seats left</a>
+            ><span id="available-seat">40</span>seats left</a>
               </div>
             </div>
+          
             </div>
 
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row justify-between mt-5 mb-6">
                 <h1>Route</h1>
-                <p>Dhaka-Sylhet</p>
+                <p class="font-bold">Dhaka-Sylhet</p>
             </div>
-            <div class="flex flex-row justify-between">
+            <div class="flex flex-row justify-between mb-6">
                 <h1>Departure Time</h1>
-                <p>9.00 pm</p>
+                <p class="font-bold">9.00 pm</p>
             </div>
             <div class="row-divs flex flex-row justify-around gap-3 ">
-                <div class="w-[232px] h-[56px] bg-[#0307120D]">
+                <div class="w-[232px] h-[56px] bg-[#0307120D] rounded-xl flex justify-center items-center">
                     <h1>Boarding Point - Laxmipur</h1>
                 </div>
-                <div  class="w-[232px] h-[56px] bg-[#0307120D]">
+                <div  class="w-[232px] h-[56px] bg-[#0307120D] rounded-xl flex justify-center items-center">
                     <h1>Boarding Point - Laxmipur</h1>
                 </div>
-                <div  class="w-[232px] h-[56px] bg-[#0307120D]">
+                <div  class="w-[232px] h-[56px] bg-[#0307120D] rounded-xl flex justify-center items-center">
                     <h1>Boarding Point - Laxmipur</h1>
                 </div>
             </div>
@@ -214,7 +222,7 @@
           </div>
         </div>
       </section>
-      <section class="keyseats">
+      <section class="keyseats mt-36">
         <div class="hero ">
           <div class="hero-content flex-col lg:flex-row-reverse">
             <div class="overflow-x-auto">
@@ -222,13 +230,12 @@
                 <!-- head -->
                 <thead>
                   <tr>
-                    <th></th>
-                    <th>Name</th>
-                    <th>Job</th>
-                    <th>Favorite Color</th>
+                    <th class="text-2xl font-bold">Seat <span id="defined-seat" class="bg-lime-400 w-4 h-4 rounded-xl">1</span></th>
+                    <th class="text-2xl font-bold">Class</th>
+                    <th class="text-2xl font-bold">Price</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody id="t-body">
                   <!-- row 1 -->
                   <!-- <tr>
                     <th>1</th>
@@ -252,108 +259,148 @@
                   </tr> -->
                 </tbody>
               </table>
-              <p>Total Price <span>550 taka</span></p>
+              <p class="text-2xl font-bold">Total Price <span id="total-price">550 taka</span></p>
               <label class="input input-bordered flex items-center gap-2">
-  <input type="text" class="grow" placeholder="Search" />
+  <input type="text" class="grow" placeholder="Have you any coupon?" />
   <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4 opacity-70"><path fill-rule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clip-rule="evenodd" /></svg> -->
-  <button>Apply</button>
+  <button class="bg-lime-400 rounded-xl w-24 h-10 font-bold ">Apply</button>
 </label>
-    <p>Grand Total <span>550 taka</span></p>
+    <p class="text-2xl font-bold mt-3">Grand Total <span>550 taka</span></p>
     <div class="form ">
-<div class="name ">
-            <label class="form-control w-full max-w-xs">
-  <div class="label">
-    <span class="label-text text-xl font-semibold">Name</span>
+<div class="name mt-5">
+            <label class="form-control w-full ">
+  <div class="label mt-2">
+    <span class="label-text text-xl font-semibold">Passenger Name</span>
   </div>
-  <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
+  <input type="text" placeholder="Enter your Name" class="input input-bordered w-[400px] h-16  bg-[#13131808]" />
+</label>
+</div>
+<div class="name mt-5">
+            <label class="form-control w-full max-w-xs">
+  <div class="label mt-2">
+    <span class="label-text text-xl font-semibold">Phone Number</span>
+  </div>
+  <input id="phone-input" type="tel" placeholder="Enter your Phone Number" class="input input-bordered w-[400px] h-16  bg-[#13131808]" />
 </label>
 </div>
 <div class="name ">
-            <label class="form-control w-full max-w-xs">
-  <div class="label">
-    <span class="label-text text-xl font-semibold">Email</span>
+            <label class="form-control">
+  <div class="label mt-2">
+    <span class=" mt-2 label-text text-xl font-semibold">Email Id</span>
   </div>
-  <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
-</label>
-</div>
-<div class="name ">
-            <label class="form-control w-full max-w-xs">
-  <div class="label">
-    <span class="label-text text-xl font-semibold">Subject</span>
-  </div>
-  <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs bg-[#13131808]" />
+  <input type="email" placeholder="Enter your Email Id" class="w-[400px] h-16 input input-bordered   bg-[#13131808]" />
 </label>
 </div>
 <div class="button col-span-2" >
-    <button class="h-16 w-80 lg:w-[34rem] bg-[#FF4240] rounded-xl text-white font-semibold">Send Me </button>
+    <!-- <button class="h-16 w-80 lg:w-[34rem] bg-[#FF4240] rounded-xl text-white font-semibold">Send Me </button> -->
+    <!-- The button to open modal -->
+<a href="#my_modal_8" id="next-btn"  class="btn w-[400px] h-16 bg-lime-500 mt-3" disabled  >Next</a>
+<!-- <input type="submit" class="w-[400px] h-16 bg-lime-500 mt-3" value="Next" disabled> -->
+<div class="modal" role="dialog" id="my_modal_8">
+  <div class="modal-box flex flex-col justify-center items-center">
+    <img src="./images/success.png" alt="">
+    <h1>Thank you for Booking Our Bus Seats. <br>
+We are working hard to find the best service and deals for you. </h1>
+<p>Shortly you will find a confirmation in your email.</p>
+<a href="#">Continue</a>
+<!-- <input type="submit"> -->
+  </div>
+</div>
+</div>
+<div class="flex flex-row justify-between">
+  <p class="border-y-4">Terms and Conditions</p>
+  <p class="border-y-4">Cancellation Policy</p>
 </div>
         </div>
             </div>
             <div>
-              <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">A1</kbd>
-                <kbd class="kbd w-24 h-12">A2</kbd>
-                <kbd class="kbd w-24 h-12">A3</kbd>
-                <kbd class="kbd w-24 h-12">A4</kbd>
+              <div class="mb-8">
+                <h1 class="font-semibold mb-7 text-3xl">Select Your Seat</h1>
+                <div class="flex flex-row justify-between">
+                  <div class="flex">
+                  <img src="./images/seat-gray.png" alt=""><p>Available</p>
+                  </div>
+                  <div class="flex">
+                  <img src="./images/seat-green-filled.png" alt=""><p class="text-lime-400">selected</p>
+                  </div>
+                </div>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">B1</kbd>
-                <kbd class="kbd w-24 h-12">B2</kbd>
-                <kbd class="kbd w-24 h-12">B3</kbd>
-                <kbd class="kbd w-24 h-12">B4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">A</kbd>
+                <kbd id="a1" class="kbd w-24 h-12">A1</kbd>
+                <kbd id="a2" class="kbd w-24 h-12">A2</kbd>
+                <kbd id="a3" class="kbd w-24 h-12">A3</kbd>
+                <kbd id="a4" class="kbd w-24 h-12">A4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">C1</kbd>
-                <kbd class="kbd w-24 h-12">C2</kbd>
-                <kbd class="kbd w-24 h-12">C3</kbd>
-                <kbd class="kbd w-24 h-12">C4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">B</kbd>
+                <kbd id="b1" class="kbd w-24 h-12">B1</kbd>
+                <kbd id="b2" class="kbd w-24 h-12">B2</kbd>
+                <kbd id="b3" class="kbd w-24 h-12">B3</kbd>
+                <kbd id="b4" class="kbd w-24 h-12">B4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">D1</kbd>
-                <kbd class="kbd w-24 h-12">D2</kbd>
-                <kbd class="kbd w-24 h-12">D3</kbd>
-                <kbd class="kbd w-24 h-12">D4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">C</kbd>
+                <kbd id="c1" class="kbd w-24 h-12">C1</kbd>
+                <kbd id="c2" class="kbd w-24 h-12">C2</kbd>
+                <kbd id="c3" class="kbd w-24 h-12">C3</kbd>
+                <kbd id="c4" class="kbd w-24 h-12">C4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">E1</kbd>
-                <kbd class="kbd w-24 h-12">E2</kbd>
-                <kbd class="kbd w-24 h-12">E3</kbd>
-                <kbd class="kbd w-24 h-12">E4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">D</kbd>
+                <kbd id="d1" class="kbd w-24 h-12">D1</kbd>
+                <kbd id="d2" class="kbd w-24 h-12">D2</kbd>
+                <kbd id="d3" class="kbd w-24 h-12">D3</kbd>
+                <kbd id="d4" class="kbd w-24 h-12">D4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">F1</kbd>
-                <kbd class="kbd w-24 h-12">F2</kbd>
-                <kbd class="kbd w-24 h-12">F3</kbd>
-                <kbd class="kbd w-24 h-12">F4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">E</kbd>
+                <kbd id="e1" class="kbd w-24 h-12">E1</kbd>
+                <kbd id="e2" class="kbd w-24 h-12">E2</kbd>
+                <kbd id="e3" class="kbd w-24 h-12">E3</kbd>
+                <kbd id="e4" class="kbd w-24 h-12">E4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">G1</kbd>
-                <kbd class="kbd w-24 h-12">G2</kbd>
-                <kbd class="kbd w-24 h-12">G3</kbd>
-                <kbd class="kbd w-24 h-12">G4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">F</kbd>
+                <kbd id="f1" class="kbd w-24 h-12">F1</kbd>
+                <kbd id="f2" class="kbd w-24 h-12">F2</kbd>
+                <kbd id="f3" class="kbd w-24 h-12">F3</kbd>
+                <kbd id="f4" class="kbd w-24 h-12">F4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">H1</kbd>
-                <kbd class="kbd w-24 h-12">H2</kbd>
-                <kbd class="kbd w-24 h-12">H3</kbd>
-                <kbd class="kbd w-24 h-12">H4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">G</kbd>
+                <kbd id="g1" class="kbd w-24 h-12">G1</kbd>
+                <kbd id="g2" class="kbd w-24 h-12">G2</kbd>
+                <kbd id="g3" class="kbd w-24 h-12">G3</kbd>
+                <kbd id="g4" class="kbd w-24 h-12">G4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">E1</kbd>
-                <kbd class="kbd w-24 h-12">E2</kbd>
-                <kbd class="kbd w-24 h-12">E3</kbd>
-                <kbd class="kbd w-24 h-12">E4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">H</kbd>
+                <kbd id="h1" class="kbd w-24 h-12">H1</kbd>
+                <kbd id="h2" class="kbd w-24 h-12">H2</kbd>
+                <kbd id="h3" class="kbd w-24 h-12">H3</kbd>
+                <kbd id="h4" class="kbd w-24 h-12">H4</kbd>
+              </div>
+
+              <div class="flex justify-center gap-1 my-1 w-full">
+                <kbd id=" " class="mr-5 kbd w-24 h-12">I</kbd>
+                <kbd id="i1" class="kbd w-24 h-12">E1</kbd>
+                <kbd id="i2" class="kbd w-24 h-12">E2</kbd>
+                <kbd id="i3" class="kbd w-24 h-12">E3</kbd>
+                <kbd id="i4" class="kbd w-24 h-12">E4</kbd>
               </div>
               <div class="flex justify-center gap-1 my-1 w-full">
-                <kbd class="kbd w-24 h-12">J1</kbd>
-                <kbd class="kbd w-24 h-12">J2</kbd>
-                <kbd class="kbd w-24 h-12">J3</kbd>
-                <kbd class="kbd w-24 h-12">J4</kbd>
+                <kbd id="" class="mr-5 kbd w-24 h-12">J</kbd>
+                <kbd id="j1" class="kbd w-24 h-12">J1</kbd>
+                <kbd id="j2" class="kbd w-24 h-12">J2</kbd>
+                <kbd id="j3" class="kbd w-24 h-12">J3</kbd>
+                <kbd id="j4" class="kbd w-24 h-12">J4</kbd>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
